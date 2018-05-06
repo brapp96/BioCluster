@@ -1,0 +1,29 @@
+BioCluster, a toolkit for managing biological data and graph clustering
+
+
+Contains several graph clustering algorithms and data sets. GUI should be pretty
+intuitive to use, just choose an algorithm and a dataset and hit cluster.
+
+If you want to use your own datasets, they need to be in the following adjacency
+list format:
+<node> <nodes connected to it numbered greater than it> (for each node in graph)
+[<labels>] (in csv format)
+
+So the graph with the adjacency matrix [1 1 0;0 1 0;0 0 1] and label vector 
+[1, 1, 2] would be represented as follows:
+
+0 1
+1
+2
+[1, 1, 2]
+
+Check the examples folder for more complex examples.
+
+Requires MATLAB to run. 
+
+Instructions:
+Start MATLAB and run design_gui.
+
+
+Copyright Brian Rappaport, Anuththari Gamage, 2018. All rights reserved.
+
